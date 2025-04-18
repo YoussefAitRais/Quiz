@@ -7,7 +7,7 @@ import { CategoryComponent } from "./category/category.component";
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent, HomeComponent, RouterOutlet, CategoryComponent],
+  imports: [NavbarComponent, HomeComponent , CategoryComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
