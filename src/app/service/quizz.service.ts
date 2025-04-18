@@ -27,7 +27,9 @@ export class QuizzService {
   constructor(private http: HttpClient) { }
 
   getQuestion(): Observable<TriviaQuestion[]> {
-    return this.http.get<any>(this.API_URL).pipe(
+     
+    return this.http.get<any>(this.API_URL)
+    .pipe(
       map(response => response.results as TriviaQuestion[])
     );
   }
